@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Alladi - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/portfolio-logo.png"> 
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- <script>
+        (function() {
+            emailjs.init(EMAILJS_PUBLIC_KEY); // EmailJS public key
+        })();
+    </script> -->
+    <link rel="preload" href="assets/images/lead-bg-video.mp4" as="video" type="video/mp4">
+</head>
+<body class="dark-mode">
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="nav-left">
+                <img id="nav-logo" src="assets/images/portfolio-logo.png" alt="Logo" class="nav-logo">
+                <!-- <img id="nav-logo" src="assets/images/portfolio-logo-black.png" alt="Logo" class="nav-logo">  -->
+                <span class="nav-name">Rahul Alladi</span>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fa fa-sun-o"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Lead Section -->
+    <div id="lead">
+        <video autoplay muted loop playsinline id="lead-video" preload="auto" poster="assets/images/preload-frame.png">
+            <source src="assets/images/lead-bg-video.mp4" type="video/mp4">
+            <!-- <source src="assets/videos/lead-video.webm" type="video/webm"> -->
+            Your browser does not support HTML5 video.
+        </video>
+        <div id="lead-content">
+            <h1>Rahul Alladi</h1>
+            <!-- <h2>Data Analyst | Data Scientist |  Backend Developer</h2> -->
+            <h2><span id="typing-effect"></span></h2>
+            <a href="assets/docs/Rahul_Alladi_Resume_DE.pdf" class="btn-rounded-white" target="_blank" rel="noreferrer noopener">View Resume</a>
+        </div>
+        <div class="chevron-down">
+            <a href="#" id="scroll-down">
+                <i class="fa fa-chevron-down"></i>
+            </a>
+        </div>
+             
+    </div>
+    
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-title">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-wrapper">
+                <img src="assets/images/profile.jpg" alt="Rahul Alladi" class="about-image">
+                <div class="about-content">
+                    <p>Hi, I'm Rahul Alladi — a software engineer who loves turning complex challenges into elegant solutions. With experience spanning cybersecurity integrations and cloud data engineering, I've built systems that detect security vulnerabilities, process enterprise data at scale, and automate workflows for efficiency. Whether it's reducing processing times from hours to minutes or implementing secure architecture patterns, I thrive on creating impact through code. I'm always exploring new technologies and looking for opportunities to build systems that make a difference.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="underline"></div>
+
+            <!-- <div class="project-filters">
+                <button class="filter-btn active" data-filter="data-engineering">Data Engineering</button>
+                <button class="filter-btn" data-filter="data-analysis">Data Science/Visualization</button>
+                <button class="filter-btn" data-filter="product-management">Product Management</button>
+            </div> -->
+
+            <div class="project-grid">
+                <a href="projects/customer-churn/index.html" class="project-card" data-category="data-analysis">
+                    <div class="card-content">
+                        <h3>Customer Churn Analysis in Tableau</h3>
+                        <p>Interactive dashboard analyzing customer churn patterns using Tableau.</p>
+                        <div class="skill-tags">
+                            <span class="tag">#Tableau</span>
+                            <span class="tag">#Data Visualization</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="projects/real-time-streaming/index.html" class="project-card" data-category="data-engineering">
+                    <div class="card-content">
+                        <h3>Real Time Data Streaming</h3>
+                        <p>End-to-end real-time data pipeline using Airflow, Kafka and Spark</p>
+                        <div class="skill-tags">
+                            <span class="tag">#Data Engineering</span>
+                            <span class="tag">#Spark</span>
+                            <span class="tag">#Airflow</span>
+                            <span class="tag">#Cassandra</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="projects/data-warehouse/index.html" class="project-card" data-category="data-engineering">
+                    <div class="card-content">
+                        <h3>Data Warehouse for Retail Analytics using Microsoft SQL Server</h3>
+                        <p>Comprehensive data warehouse implementation using SQL Server.</p>
+                        <div class="skill-tags">
+                            <span class="tag">#Data Warehousing</span>
+                            <span class="tag">#SQL Server</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="projects/resqvision/index.html" class="project-card" data-category="data-analysis">
+                    <div class="card-content">
+                        <h3>ResQVision - Emergency Analytics Dashboard</h3>
+                        <p>Visualizing emergency response patterns to optimize operations and resources.</p>
+                        <div class="skill-tags">
+                            <span class="tag">#Data Visualization</span>
+                            <span class="tag">#D3.js</span>
+                            <span class="tag">#React.js</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="projects/market-basket/index.html" class="project-card" data-category="data-analysis">
+                    <div class="card-content">
+                        <h3>Market Basket Analysis</h3>
+                        <p>Analysis of shopping patterns using R and Apriori algorithm.</p>
+                        <div class="skill-tags">
+                            <span class="tag">#R Programming</span>
+                            <span class="tag">#Data Analysis</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="projects/pos-system/index.html" class="project-card" data-category="data-engineering">
+                    <div class="card-content">
+                        <h3>Point-of-Sale (POS) System</h3>
+                        <p>Built a POS system using MySQL and MongoDB.</p>
+                        <div class="skill-tags">
+                            <span class="tag">#AWS EC2</span>
+                            <span class="tag">#Python</span>
+                            <span class="tag">#MariaDB</span>
+                            <span class="tag">#NoSQL</span>
+                            <span class="tag">#Database Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="projects/fashionmnist-classification/index.html" class="project-card" data-category="data-analysis">
+                    <div class="card-content">
+                        <h3>FashionMNIST Image Classification</h3>
+                        <p>Comparison of various models on classifying images based on the standard FashionMNIST dataset.</p>
+                        <div class="skill-tags">
+                            <span class="tag">#Data Mining</span>
+                            <span class="tag">#Machine Learning</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="projects/investobuddy/index.html" class="project-card" data-category="data-analysis">
+                    <div class="card-content">
+                        <h3>Investobuddy</h3>
+                        <p>Investment Analysis tool powered by Machine Learning Techniques such as LSTM and Random Forest</p>
+                        <div class="skill-tags">
+                            <span class="tag">#Machine Learning</span>
+                            <span class="tag">#Python</span>
+                            <span class="tag">#Flask</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="underline"></div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">March 2023 – August 2024</div>
+                    <div class="timeline-content">
+                        <div class="company-logo">
+                            <img src="assets/images/tamu-logo.png" alt="Texas A&M Logo">
+                        </div>
+                        <div class="company-info">
+                            <h3>Flying Duck</h3>
+                            <h4><i>Backend Developer</i></h4>
+                        </div>
+                        <ul class="details">
+                            <li>Automated data ingestion using scripts for 54 raw files resulting in a 60% reduction in manual effort</li>
+                            <li>Analyzed student compliance records in Excel using pivot tables and VLOOKUP to spot recurring submission errors across 5 departments, helping reduce exception cases by 20% over one semester</li>
+                            <li>Created and maintained 6 SOPs and workflow guides to document process changes in compliance tracking, reducing the onboarding time for new analysts by 40%</li>
+                            <li>Mentored 25+ students on data modeling best practices and translating business needs into structured datasets during Business Systems Analysis coursework</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">March 2022 – August 2022</div>
+                    <div class="timeline-content">
+                        <div class="company-logo">
+                            <img src="assets/images/ltimindtree-logo-blue.png" alt="LTIMindtree Logo">
+                        </div>
+                        <div class="company-info">
+                            <h3>Tiger Analytics</h3>
+                            <h4><i>Big Data Engineer Intern</i></h4>
+                        </div>
+                        <ul class="details">
+                            <li>Developed SAP reports and scripts using SQL and ABAP to extract, filter, and join transactional data, reducing upstream data mismatches by 18%</li>
+                            <li>Built an ETL data pipeline using Spark to integrate structured data from 7 data sources into AWS Redshift, processing over 750 GB/month data, and reducing reporting latency for operational KPIs</li>
+                            <li>Spearheaded cross-functional coordination for release management in 52+ product releases, implementing process optimizations that reduced breaches by 84%</li>
+                            <li>Led cross functional collaboration with global teams and the leadership across 52+ agile product releases, simplifying SDLC audit process to eliminate compliance breaches and reduce release issues by 84%</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Education section -->
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="underline"></div>
+
+            <div class="education-block">
+                <div class="education-header">
+                    <div class="university-logo">
+                        <img src="assets/images/tamu-logo.png" alt="Purdue University">
+                    </div>
+                    <div class="university-info">
+                        <h3>Purdue University</h3>
+                        <span class="education-date">Aug 2024 - May 2026</span>
+                        <h4><i>Master of Science - Computer Science</i></h4>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <p>GPA: 3.7</p>
+                    <!-- <p>Head of Marketing & Communications at Business Information Technology Students (BITS)</p><br> -->
+                    <p>Relevant Coursework - </p>
+                    <ul>
+                        <li>Natural Language Processing</li>
+                        <li>Software Engineering</li>
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>Algorithms design analysis and implementation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="education-block">
+                <div class="education-header">
+                    <div class="university-logo">
+                        <img src="assets/images/spit-logo.png" alt="V.B.I.T. Logo">
+                    </div>
+                    <div class="university-info">
+                        <h3>Vignan Barathi Institute of Technology</h3>
+                        <span class="education-date">Aug 2018 - May 2022</span>
+                        <h4><i>Bachelor of Technology - Computer Science</i></h4>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <p>Achievements:</p>
+                    <ul>
+                        <li>Semi Finalist (Top 20 out of 800+ teams) at IICDC-2019, a national innovation hackathon by Texas Instruments & Dept. of Science & Technology - Govt. of India for building an affordable non-invasive flow meter</li>
+                        <li>Winner - Case Study Presentation by Fire & Security Association of India (FSAI)</li>
+                        <!-- <li>Volunteered for beach cleanup drives in Mumbai under Mr. Afroz Shah through 'SEVA' initiative</li> -->
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <!-- <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="underline"></div>
+            
+            <div class="skills-carousel">
+                <div class="skills-track">
+                    <div class="skill-card"><img src="/assets/images/skills/python-5.svg" alt="Python"><div class="skill-name">Python</div></div>
+                    <div class="skill-card"><img src="/assets/images/skills/mysql-logo-pure.svg" alt="SQL"><div class="skill-name">SQL</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/r-lang.svg" alt="Azure"><div class="skill-name">R</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/git-icon.svg" alt="Git"><div class="skill-name">Git</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/aws-2.svg" alt="AWS"><div class="skill-name">AWS</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/apache-spark-5.svg" alt="Apache Spark"><div class="skill-name">Apache Spark</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/cassandra.svg" alt="Cassandra"><div class="skill-name">Cassandra</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/mongodb-icon-2.svg" alt="MongoDB"><div class="skill-name">MongoDB</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/microsoft-sql-server-1.svg" alt="SSIS"><div class="skill-name">SSIS</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/tableau-software.svg" alt="Tableau"><div class="skill-name">Tableau</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/microsoft-excel-2013.svg" alt="Excel"><div class="skill-name">Excel</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/microsoft-5.svg" alt="Power BI"><div class="skill-name">Power BI</div></div>
+                    
+                     Duplicate for seamless scroll 
+                    <div class="skill-card"><img src="/assets/images/skills/python-5.svg" alt="Python"><div class="skill-name">Python</div></div>
+                    <div class="skill-card"><img src="/assets/images/skills/mysql-logo-pure.svg" alt="SQL"><div class="skill-name">SQL</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/r-lang.svg" alt="R"><div class="skill-name">R</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/git-icon.svg" alt="Git"><div class="skill-name">Git</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/aws-2.svg" alt="AWS"><div class="skill-name">AWS</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/apache-spark-5.svg" alt="Apache Spark"><div class="skill-name">Apache Spark</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/cassandra.svg" alt="Cassandra"><div class="skill-name">Cassandra</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/mongodb-icon-2.svg" alt="MongoDB"><div class="skill-name">MongoDB</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/microsoft-sql-server-1.svg" alt="SSIS"><div class="skill-name">SSIS</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/tableau-software.svg" alt="Tableau"><div class="skill-name">Tableau</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/microsoft-excel-2013.svg" alt="Excel"><div class="skill-name">Excel</div></div>
+                    <div class="skill-card"><img src="assets/images/skills/microsoft-5.svg" alt="Power BI"><div class="skill-name">Power BI</div></div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="skills"></section>
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="underline"></div>
+            
+            <div class="skills-grid"> 
+                <div class="skill-card"><img src="/assets/images/skills/Python.svg" alt="Python"><div class="skill-name">Python</div></div>
+                <div class="skill-card"><img src="/assets/images/skills/SQL.svg" alt="SQL"><div class="skill-name">SQL</div></div>
+                <div class="skill-card"><img src="assets/images/skills/data-analysis.svg" alt="Data Analysis"><div class="skill-name">Data Analysis</div></div>
+                <div class="skill-card"><img src="assets/images/skills/Mongo_DB.svg" alt="Mongo DB"><div class="skill-name">Mongo DB</div></div>
+                <div class="skill-card"><img src="assets/images/skills/html-5.svg" alt="HTML"><div class="skill-name">HTML</div></div>
+                <div class="skill-card"><img src="assets/images/skills/AWS.svg" alt="AWS"><div class="skill-name">AWS</div></div>
+                <div class="skill-card"><img src="assets/images/skills/machine-learning.svg" alt="Machine Learning"><div class="skill-name">Machine Learning</div></div>
+                <div class="skill-card"><img src="assets/images/skills/Azure.svg" alt="Azure"><div class="skill-name">Azure</div></div>
+                <div class="skill-card"><img src="/assets/images/skills/HTML.svg" alt="HTML"><div class="skill-name">HTML</div></div>
+                <div class="skill-card"><img src="assets/images/skills/CSS.svg" alt="CSS"><div class="skill-name">CSS</div></div>
+                <div class="skill-card"><img src="/assets/images/skills/C/C++.svg" alt="C/C++"><div class="skill-name">C/C++</div></div>
+                
+                </div>
+        </div>
+    </section>
+    
+    <!-- Contact -->    
+    <section id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <a href="mailto:rahulalladi27@gmail.com?subject=Looking%20to%20connect%20-%20via%20Portfolio" class="email-button">
+                <i class="fa fa-envelope"></i> Contact me via Email
+            </a>
+                        
+            <div class="linkedin-prompt">
+                <p style="color: var(--text-color)">or send me a Connect request on LinkedIn:</p>
+                <!-- <div class="badge-info">
+                    <p><i>Please refresh the page if you click anywhere other than "View Profile".</i></p>
+                </div> -->
+                <div class="linkedin-badge">
+                    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+                    <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="Rahul-Alladi"></div>
+                </div>
+                <div class="linkedin-mobile">
+                    <a href="https://www.linkedin.com/in/rahul-alladi-1a759316a/" target="_blank" class="linkedin-button">
+                        <i class="fa fa-linkedin"></i> Connect on LinkedIn
+                    </a>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Navigation for Mobile/Tablet -->
+    <nav class="bottom-nav">
+        <a href="#projects">
+            <i class="fa fa-lightbulb-o"></i>
+            <span>Projects</span>
+        </a>
+        <a href="#experience">
+            <i class="fa fa-briefcase"></i>
+            <span>Experience</span>
+        </a>
+        <a href="#contact">
+            <i class="fa fa-phone"></i>
+            <span>Contact</span>
+        </a>
+        <div class="dropup">
+            <button id="more-btn">
+                <i class="fa fa-bars"></i>
+                <span>More</span>
+            </button>
+            <div id="more-menu" class="dropup-menu">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="floating-buttons">
+        <a href="assets/docs/Rahul Alladi_Resume_DE.pdf" class="float-button resume-button" target="_blank">
+            <i class="fa fa-file-text"></i> View Resume
+        </a>
+        <a href="#" class="float-button scroll-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>    
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>Copyright © 2025 Rahul Alladi</p>
+            </div>
+            <div class="back-to-top">
+                <a href="#lead">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+            </div>
+            <div class="social">
+                <a href="https://github.com/Rahul-Alladi-feb-10" target="_blank">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rahul-alladi-1a759316a/" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="emailjs_config.js"></script>    
+    <script src="script.js"></script>
+</body>
+</html>
