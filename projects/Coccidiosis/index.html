@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Chicken Disease Classification</title>
+    <link rel="icon" type="image/x-icon" href="../../assets/images/portfolio-logo.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <nav>
+            <div class="nav-left">
+                <img id="nav-logo" src="/assets/images/portfolio-logo.png" alt="Logo" class="nav-logo">
+                <span class="nav-name">Rahul Alladi</span>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="/index.html#about">About</a></li>
+                    <li><a href="/index.html#projects">Projects</a></li>
+                    <li><a href="/index.html#experience">Experience</a></li>
+                    <li><a href="/index.html#education">Education</a></li>
+                    <li><a href="/index.html#skills">Skills</a></li>
+                    <li><a href="/index.html#contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fa fa-sun-o"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div class="project-detail">
+        <div class="container">
+            <div class="back-link">
+                <a href="../../index.html#projects">
+                    <i class="fa fa-chevron-left"></i> Back
+                </a>
+            </div>            
+            <h1 class="project-title">Automated Chicken Disease Classification</h1>
+            <section class="project-section achievement">
+                <h2>Summary</h2>
+                <div class="achievement-box">
+                    <p>Engineered an end-to-end deep learning system to automate the detection of Coccidiosis from chicken droppings images, solving the problem of inefficient manual inspection . This involved developing a transfer learning model (VGG16) and establishing a production-grade MLOps pipeline , resulting in a deployed web application that provides instant, accurate disease classification to significantly reduce livestock losses.</p>
+                </div>
+            </section>
+
+            <div class="project-links-top">
+                <a href="https://github.com/Rahul-Alladi-feb-10/Automated-PR-Review-Agent-Repo" class="external-button" target="_blank">
+                    <i class="fa fa-external-link"></i> GitHub Repository
+                </a>
+            </div>
+
+            <section class="project-section">
+                <h2>Approach & Core Functionality</h2>
+                <div class="content">
+                    <p>
+                        <ul style="margin-left: 2em;">
+                            <li>Deep Learning Model: Developed an image classification model using VGG16 transfer learning with fine-tuned custom layers to achieve high accuracy in distinguishing healthy droppings from those affected by Coccidiosis.</li>
+                            <li>MLOps & Reproducibility: Integrated DVC (Data Version Control) to manage and track the full deep learning pipeline (data ingestion, training, evaluation), ensuring reproducibility and enabling efficient re-runs by skipping unchanged stages.</li>
+                            <li>Modular Architecture: Implemented a generic, modular coding template with structured components (entity, config, components, pipeline), promoting organized, maintainable, and scalable project architecture.</li>
+                            <!-- <li>CI/CD Pipeline: Established a robust CI/CD pipeline and containerized the application using Docker to ensure environment consistency across development and production environments.</li>
+                            <li>Multi-Cloud Deployment: Executed production-grade deployment of the web application on both AWS (Amazon Web Services) and Microsoft Azure, demonstrating proficiency in cloud infrastructure and deployment strategies.</li> -->
+                        </ul>
+                    </p>
+                </div>
+            </section>
+            
+            <section class="project-section">
+                <h2>Key Technologies</h2>
+                <div class="content">
+                    <p>
+                        <ul>
+                            <li>**Python & @dataclass:** Core programming language and defining the shared, structured state for data management.</li>
+                            <li>**LangChain/Gemini:** Provides the Generative AI capabilities for analysis, test generation, and summarization.</li>
+                            <li>**LangGraph:** The orchestration layer that defines the fixed, multi-step pipeline and manages the state flow between agents.</li>
+                            <li>**Streamlit:** The user interface layer, allowing easy input of the PR URL and display of the final, formatted review report.</li>
+                        </ul>
+                    </p>
+                </div>
+            </section>
+
+
+            <div class="project-links">
+                <a href="https://github.com/Rahul-Alladi-feb-10/Automated-PR-Review-Agent-Repo" class="external-button" target="_blank">
+                    <i class="fa fa-external-link"></i> View GitHub Repository
+                </a>
+                <a href="../../index.html#projects" class="back-button">
+                    <i class="fa fa-arrow-left"></i> Back to homepage
+                </a>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    <nav class="bottom-nav">
+        <a href="/index.html#projects">
+            <i class="fa fa-lightbulb-o"></i>
+            <span>Projects</span>
+        </a>
+        <a href="/index.html#experience">
+            <i class="fa fa-briefcase"></i>
+            <span>Experience</span>
+        </a>
+        <a href="/index.html#contact">
+            <i class="fa fa-phone"></i>
+            <span>Contact</span>
+        </a>
+        <div class="dropup">
+            <button id="more-btn">
+                <i class="fa fa-bars"></i>
+                <span>More</span>
+            </button>
+            <div id="more-menu" class="dropup-menu">
+                <a href="/index.html#about">About</a>
+                <a href="/index.html#education">Education</a>
+                <a href="/index.html#skills">Skills</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="floating-buttons">
+        <a href="/assets/docs/Rahul_Alladi_Resume_DE.pdf" class="float-button resume-button" target="_blank">
+            <i class="fa fa-file-text"></i> View Resume
+        </a>
+        <a href="#" class="float-button scroll-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>Copyright © 2025 Rahul Alladi</p>
+            </div>
+            <div class="back-to-top">
+                <a href="#">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+            </div>
+            <div class="social">
+                <a href="https://github.com/Rahul-Alladi-feb-10" target="_blank">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rahul-alladi-1a759316a/" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>

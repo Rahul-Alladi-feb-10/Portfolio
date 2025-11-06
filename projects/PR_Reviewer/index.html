@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated PR Review Agent: A Multi-Agent System with LangGraph & Gemini</title>
+    <link rel="icon" type="image/x-icon" href="../../assets/images/portfolio-logo.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <nav>
+            <div class="nav-left">
+                <img id="nav-logo" src="/assets/images/portfolio-logo.png" alt="Logo" class="nav-logo">
+                <span class="nav-name">Rahul Alladi</span>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="/index.html#about">About</a></li>
+                    <li><a href="/index.html#projects">Projects</a></li>
+                    <li><a href="/index.html#experience">Experience</a></li>
+                    <li><a href="/index.html#education">Education</a></li>
+                    <li><a href="/index.html#skills">Skills</a></li>
+                    <li><a href="/index.html#contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fa fa-sun-o"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div class="project-detail">
+        <div class="container">
+            <div class="back-link">
+                <a href="../../index.html#projects">
+                    <i class="fa fa-chevron-left"></i> Back
+                </a>
+            </div>            
+            <h1 class="project-title">Automated PR Review Agent: A Multi-Agent System with LangGraph & Gemini</h1>
+            <section class="project-section achievement">
+                <h2>Summary</h2>
+                <div class="achievement-box">
+                    <p>Engineered a multi-agent, sequential pipeline using **LangGraph** to automate the Pull Request (PR) review process, **reducing manual code inspection time** and enhancing code quality by enforcing standardized checks for bugs, security, and performance.</p>
+                </div>
+            </section>
+
+            <div class="project-links-top">
+                <a href="https://github.com/Rahul-Alladi-feb-10/Automated-PR-Review-Agent-Repo" class="external-button" target="_blank">
+                    <i class="fa fa-external-link"></i> GitHub Repository
+                </a>
+            </div>
+
+            <section class="project-section">
+                <h2>Approach & Core Functionality</h2>
+                <div class="content">
+                    <p>
+                        <ul style="margin-left: 2em;">
+                            <li>Architected a four-step agent workflow (Fetcher, Reviewer, Test Coverage, Summarizer) orchestrated by an **evolving Python dataclass state**, ensuring seamless and structured data flow across all stages.</li>
+                            <li>Integrated the **Gemini** generative model to execute sophisticated tasks, including **deep code analysis** to identify subtle vulnerabilities and **dynamic generation** of missing `pytest` stubs for uncovered functions.</li>
+                            <li>Developed a **Streamlit** front-end that accepts a GitHub PR URL and displays a comprehensive, natural language review report, making the complex GenAI-driven process accessible to developers.</li>
+                            <li>Implemented a specialized **Code Review Agent** that performs preliminary static checks (e.g., risky keyword identification) before engaging the LLM for advanced analysis, **optimizing efficiency** and minimizing token usage.</li>
+                        </ul>
+                    </p>
+                </div>
+            </section>
+            
+            <section class="project-section">
+                <h2>Key Technologies</h2>
+                <div class="content">
+                    <p>
+                        <ul>
+                            <li>**Python & @dataclass:** Core programming language and defining the shared, structured state for data management.</li>
+                            <li>**LangChain/Gemini:** Provides the Generative AI capabilities for analysis, test generation, and summarization.</li>
+                            <li>**LangGraph:** The orchestration layer that defines the fixed, multi-step pipeline and manages the state flow between agents.</li>
+                            <li>**Streamlit:** The user interface layer, allowing easy input of the PR URL and display of the final, formatted review report.</li>
+                        </ul>
+                    </p>
+                </div>
+            </section>
+
+
+            <div class="project-links">
+                <a href="https://github.com/Rahul-Alladi-feb-10/Automated-PR-Review-Agent-Repo" class="external-button" target="_blank">
+                    <i class="fa fa-external-link"></i> View GitHub Repository
+                </a>
+                <a href="../../index.html#projects" class="back-button">
+                    <i class="fa fa-arrow-left"></i> Back to homepage
+                </a>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    <nav class="bottom-nav">
+        <a href="/index.html#projects">
+            <i class="fa fa-lightbulb-o"></i>
+            <span>Projects</span>
+        </a>
+        <a href="/index.html#experience">
+            <i class="fa fa-briefcase"></i>
+            <span>Experience</span>
+        </a>
+        <a href="/index.html#contact">
+            <i class="fa fa-phone"></i>
+            <span>Contact</span>
+        </a>
+        <div class="dropup">
+            <button id="more-btn">
+                <i class="fa fa-bars"></i>
+                <span>More</span>
+            </button>
+            <div id="more-menu" class="dropup-menu">
+                <a href="/index.html#about">About</a>
+                <a href="/index.html#education">Education</a>
+                <a href="/index.html#skills">Skills</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="floating-buttons">
+        <a href="/assets/docs/Rahul_Alladi_Resume_DE.pdf" class="float-button resume-button" target="_blank">
+            <i class="fa fa-file-text"></i> View Resume
+        </a>
+        <a href="#" class="float-button scroll-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>Copyright © 2025 Rahul Alladi</p>
+            </div>
+            <div class="back-to-top">
+                <a href="#">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+            </div>
+            <div class="social">
+                <a href="https://github.com/Rahul-Alladi-feb-10" target="_blank">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rahul-alladi-1a759316a/" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
