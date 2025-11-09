@@ -85,11 +85,11 @@ document.addEventListener("DOMContentLoaded", () => {
 // Dark/Light theme toggle
 const themeToggle = document.getElementById('theme-toggle');
 const themeIcon = themeToggle.querySelector('i');
-const navLogo = document.getElementById('nav-logo');
+// const navLogo = document.getElementById('nav-logo');
 
-function updateLogo(isDark) {
-    navLogo.src = isDark ? '/assets/images/portfolio-logo.png' : '/assets/images/portfolio-logo-black.png';
-}
+// function updateLogo(isDark) {
+//     navLogo.src = isDark ? '/assets/images/portfolio-logo.png' : '/assets/images/portfolio-logo-black.png';
+// }
 
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'light') {
